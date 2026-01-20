@@ -1,0 +1,698 @@
+:root {
+	--bg-white: #ffffff;
+	--bg-soft: #f8f8f8;
+	--text-dark: #1a1a1a;
+	--text-gray: #666666;
+	--accent-black: #262626;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Manrope', sans-serif;
+	background-color: var(--bg-white);
+	color: var(--text-dark);
+	line-height: 1.5;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	padding: 30px 5%;
+	align-items: center;
+	gap: 25px;
+}
+
+.lang-btn {
+	font-size: 18px;
+	cursor: pointer;
+	color: #333;
+}
+
+.lang-btn-btn {
+	transition: all 0.4s ease;
+}
+.lang-btn-btn:hover {
+	scale: 1.2;
+}
+.lang-btn-btn:active {
+	opacity: 0.6;
+}
+.contact-pill {
+	width: 70px;
+	height: 35px;
+	background: #333;
+	border-radius: 20px;
+	transition: all 0.4s ease;
+}
+.contact-pill:hover {
+	scale: 1.1;
+}
+.contact-pill:active{
+	opacity: 0.6;
+}
+.images {
+	transition: all 0.4s ease;
+}
+
+.images:hover {
+	scale: 1.2;
+}
+
+.images:active {
+	opacity: 0.6;
+}
+
+.hero {
+	padding: 40px 0 60px 0;
+}
+.profile-img {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	margin-bottom: 25px;
+	object-fit: cover;
+}
+h1 {
+	font-size: 54px;
+	font-weight: 500;
+	line-height: 1.1;
+	margin: 0 0 25px 0;
+	max-width: 800px;
+}
+.hero-list {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 30px;
+}
+.hero-list li {
+	font-size: 15px;
+	color: var(--text-gray);
+	margin-bottom: 8px;
+	display: flex;
+	align-items: center;
+}
+.hero-list li::before {
+	content: '•';
+	margin-right: 12px;
+	font-size: 20px;
+}
+.btn-fast {
+	background: var(--accent-black);
+	color: white;
+	border: none;
+	padding: 14px 28px;
+	border-radius: 10px;
+	font-size: 15px;
+	cursor: pointer;
+	margin-bottom: 40px;
+	border: 2px solid black;
+	transition: all 0.4s ease;
+}
+.btn-fast:hover {
+	background-color: transparent;
+	color: black;
+	scale: 1.1;
+}
+.btn-fast:active {
+	opacity: 0.4;
+}
+.socials {
+	display: flex;
+	gap: 12px;
+	margin-bottom: 60px;
+}
+.socials a {
+	width: 35px;
+	height: 35px;
+	border: 1px solid #eee;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #333;
+	text-decoration: none;
+}
+.partners {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.imgg {
+	transition: all 0.4s ease;
+}
+
+.imgg:hover {
+	scale: 1.2;
+}
+
+.imgg:active {
+	opacity: 0.6;
+}
+.projects-sec {
+}
+.projects-sec h2 {
+	font-size: 36px;
+	margin-bottom: 50px;
+	font-weight: 500;
+}
+.projects-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px 30px;
+}
+.project-card img {
+	width: 100%;
+	border-radius: 12px;
+	margin-bottom: 20px;
+	display: block;
+}
+.project-card h3 {
+	font-size: 22px;
+	margin: 0 0 8px 0;
+	font-weight: 500;
+}
+.project-card p {
+	color: var(--text-gray);
+	font-size: 15px;
+	margin: 0;
+}
+.btn-all-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 60px auto 0;
+	background: #2a2a2a;
+	color: white;
+	padding: 10px 24px;
+	border-radius: 25px;
+	text-decoration: none;
+	font-size: 13px;
+	width: fit-content;
+	border: 2px solid #2a2a2a;
+	transition: all 0.4s ease;
+}
+.btn-all-projects:hover {
+	background-color: transparent;
+	color: #2a2a2a;
+	scale: 1.1;
+}
+.btn-all-projects:active {
+	opacity: 0.6;
+}
+
+.testimonials-sec h2 {
+	font-size: 36px;
+	margin-bottom: 50px;
+	padding-left: 40px;
+}
+
+.testimonial-card {
+	transition: all 0.5s ease;
+}
+
+.testimonial-card:hover {
+	background-color: #666666;
+}
+
+/* start */
+.projects-sec h2 {
+	font-size: 36px;
+	margin-bottom: 50px;
+	font-weight: 500;
+}
+.projects-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px 30px;
+}
+.project-card img {
+	width: 100%;
+	border-radius: 12px;
+	margin-bottom: 20px;
+	display: block;
+}
+.project-card h3 {
+	font-size: 22px;
+	margin: 0 0 8px 0;
+	font-weight: 500;
+}
+.project-card p {
+	color: var(--text-gray);
+	font-size: 15px;
+	margin: 0;
+}
+.btn-all-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 60px auto 0;
+	background: #2a2a2a;
+	color: white;
+	padding: 10px 24px;
+	border-radius: 25px;
+	text-decoration: none;
+	font-size: 13px;
+	width: fit-content;
+}
+
+.testimonials-sec {
+	background-color: #f6f6f6;
+	padding: 100px 0;
+	border-radius: 0 0 50px 50px;
+	overflow: hidden;
+}
+
+.testimonials-sec h2 {
+	font-size: 36px;
+	margin-bottom: 50px;
+	padding-left: 40px;
+}
+/* end */
+.testimonials-slider {
+	display: flex;
+	gap: 20px;
+	padding: 0 40px;
+}
+.testimonials-slider::-webkit-scrollbar {
+	display: none;
+}
+
+.testimonial-card {
+	width: 500;
+	height: 440.0199890136719;
+	max-width: 500;
+	angle: 0 deg;
+	opacity: 1;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 77.02px;
+	padding-left: 40px;
+	border-radius: 13px;
+	background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.5) 91%);
+}
+.testi-header {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 25px;
+}
+.testi-img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.testi-info h4 {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+.testi-info span {
+	font-size: 13px;
+	color: var(--text-gray);
+	display: block;
+}
+.testi-text {
+	font-size: 14px;
+	color: #444;
+	margin: 0;
+	line-height: 1.6;
+}
+
+.hero-section {
+	background-color: #3d3d3d;
+	padding: 100px 10%;
+	color: white;
+}
+
+.hero-section h1 {
+	font-size: 48px;
+	font-weight: 500;
+	margin: 0 0 15px 0;
+	letter-spacing: -1px;
+}
+
+.hero-section p {
+	font-size: 18px;
+	color: #cccccc;
+	margin: 0 0 30px 0;
+}
+
+.btn-consult {
+	background-color: #2a2a2a;
+	color: white;
+	border: none;
+	padding: 12px 24px;
+	font-size: 14px;
+	border-radius: 4px;
+	border: 2px solid #2a2a2a;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+
+.btn-consult:hover {
+	background-color: #1a1a1a;
+	color: white;
+	scale: 1.1;
+}
+
+.btn-consult:active {
+	opacity: 0.6;
+}
+/* Footer qismi */
+.footer-main {
+	background-color: #262626;
+	padding: 40px 10%;
+	border-top: 1px solid #333;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.brand-name {
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+	text-decoration: underline;
+}
+
+.nav-links a {
+	position: relative;
+	color: #888;
+	text-decoration: none;
+	margin-left: 30px;
+	font-size: 14px;
+	padding-bottom: 5px;
+	transition: color 0.3s ease, opacity 0.2s ease;
+}
+
+/* chiziq */
+.nav-links a::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background-color: #fff;
+	transition: all 0.3s ease;
+	transform: translateX(-50%);
+}
+
+/* hover */
+.nav-links a:hover {
+	color: #fff;
+}
+
+.nav-links a:hover::after {
+	width: 100%;
+}
+
+/* active (bosilganda) */
+.nav-links a:active {
+	opacity: 0.6;
+}
+
+.social-icons a {
+	color: #888;
+	margin-left: 15px;
+	font-size: 18px;
+	border: 1px solid #444;
+	width: 35px;
+	height: 35px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+.copyright-text {
+	border-top: 1px solid #333;
+	padding-top: 20px;
+	text-align: center;
+	color: #666;
+	font-size: 13px;
+}
+
+@media (max-width: 1120px) {
+	.testimonials-slider {
+		display: flex;
+		gap: 20px;
+		padding: 0 40px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* RESPONSIVE: 768px va undan kichik ekranlar uchun */
+@media (max-width: 768px) {
+	header {
+		justify-content: center; /* Menyu markazga kelishi uchun */
+		padding: 20px 0;
+	}
+
+	.lang-btn {
+		display: none;
+	}
+
+	.lang-switch,
+	.contact-pill {
+		display: none; /* Rasmda ko'rsatilganidek burger menyu bo'lsa bular yashiriladi */
+	}
+
+	/* Burger menyu belgisi (rasmda 2ta chiziq) */
+	header::before {
+		content: '';
+		width: 30px;
+		height: 2px;
+		background: #333;
+		box-shadow: 0 8px 0 #333;
+		cursor: pointer;
+	}
+
+	.hero {
+		padding-left: 0;
+		text-align: left; /* Matn chapda qolishi uchun, agar markaz deysiz text-align: center qiling */
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start; /* Elementlarni chapga tekislaydi */
+	}
+
+	.profile-img {
+		width: 100px;
+		height: 100px;
+	}
+
+	h1 {
+		font-size: 36px; /* Mobilda sarlavha biroz kichrayadi */
+		max-width: 100%;
+	}
+
+	.features-list li {
+		font-size: 16px;
+	}
+
+	.social-row {
+		justify-content: flex-start;
+		width: 100%;
+	}
+
+	.logos-section {
+		justify-content: center; /* Hamkorlar logotiplari markazda */
+		gap: 30px;
+	}
+
+	.logos-section img,
+	.logos-section span {
+		height: 20px;
+		font-size: 14px;
+	}
+
+	.testimonials-slider {
+		display: flex;
+		gap: 20px;
+		padding: 0 40px;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.projects-sec h2 {
+		font-size: 28px;
+		margin-bottom: 40px;
+	}
+
+	.projects-grid {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
+
+	.project-card h3 {
+		font-size: 20px;
+	}
+
+	.btn-all-projects {
+		margin: 50px auto 0;
+		padding: 12px 28px;
+		font-size: 14px;
+	}
+
+	.testimonials-sec {
+		padding: 80px 0;
+		border-radius: 40px 40px 0 0;
+	}
+
+	.testimonials-sec h2 {
+		font-size: 28px;
+		margin-bottom: 40px;
+		padding-left: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.projects-sec h2 {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+
+	.projects-grid {
+		gap: 24px;
+	}
+
+	.project-card img {
+		border-radius: 8px;
+		margin-bottom: 15px;
+	}
+
+	.project-card h3 {
+		font-size: 15px;
+		margin-bottom: 6px;
+	}
+
+	.project-card p {
+		font-size: 13px;
+	}
+
+	.btn-all-projects {
+		margin: 40px auto 0;
+		padding: 10px 24px;
+		font-size: 13px;
+	}
+
+	.testimonials-sec {
+		padding: 60px 0;
+		border-radius: 30px 30px 0 0;
+	}
+
+	.testimonials-sec h2 {
+		font-size: 24px;
+		margin-bottom: 30px;
+		padding-left: 15px;
+	}
+}
+
+/* RESPONSIVE: 390px ekranlar uchun (iPhone o'lchami) */
+@media (max-width: 390px) {
+	header {
+		justify-content: center; /* Burger menyuni markazga olish */
+		padding: 30px 0 10px 0;
+	}
+
+	/* Rasmda ko'ringan burger menyu (ikki chiziq) */
+	header::before {
+		content: '';
+		width: 32px;
+		height: 2px;
+		background: #1a1a1a;
+		box-shadow: 0 10px 0 #1a1a1a; /* Ikkinchi chiziqni hosil qilish */
+		cursor: pointer;
+	}
+
+	/* Asl Switch va Pill larni yashirish */
+	.lang-switch,
+	.contact-pill {
+		display: none;
+	}
+
+	.container {
+		padding: 20px;
+	}
+
+	.hero {
+		padding-top: 40px;
+		padding-left: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center; /* Hamma narsani markazga tekislash */
+		text-align: center;
+	}
+
+	.profile-img {
+		width: 110px; /* Rasmda mobil o'lchamda biroz kattaroq */
+		height: 110px;
+		margin-bottom: 30px;
+	}
+
+	h1 {
+		font-size: 34px; /* Sarlavha o'lchamini rasmga moslash */
+		line-height: 1.2;
+		margin-bottom: 25px;
+		max-width: 100%;
+	}
+
+	.features-list {
+		text-align: left; /* Ro'yxat o'z shaklini saqlashi uchun */
+		display: inline-block;
+		margin-bottom: 35px;
+	}
+
+	.features-list li {
+		font-size: 16px;
+		margin-bottom: 12px;
+	}
+
+	.btn-fast {
+		width: 100%; /* Mobil telefonda bosishga qulay bo'lishi uchun */
+		max-width: 250px;
+		padding: 16px;
+		font-size: 15px;
+	}
+
+	.social-row {
+		justify-content: center; /* Ikonkalarni markazga olish */
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+
+	/* Hamkorlar logotiplari qatori */
+	.logos-section {
+		display: grid;
+		grid-template-columns: 1fr; /* Logotiplar ostma-ost tushishi uchun */
+		justify-items: center;
+		gap: 30px;
+		padding-bottom: 60px;
+	}
+
+	.logos-section span,
+	.logos-section img {
+		height: 22px;
+		font-size: 18px;
+		font-weight: bold;
+	}
+}
